@@ -1,0 +1,86 @@
+.container {
+    max-width: 1366px;
+    width: 100%;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+.cards-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.card {
+    flex: 0 0 25%;
+    width: 25%;
+    padding: 0 10px;
+    margin-top: 15px;
+}
+a.team-card__inner {
+    display: block;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: red;
+    text-decoration: none;
+    height: 330px;
+}
+
+.team-card__logo {
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    padding: 15px;
+    border-radius: 50%;
+    background-color: white;
+}
+.team-card__logo img {
+    width: 100%;
+    height: auto;
+}
+.card__title {
+    font-size: 2rem;
+    color: white;
+    font-family: "Megrim", sans-serif;
+    text-align: center;
+    margin: 0.5rem 0;
+}
+.card__subtitle {
+    color: #fff;
+    height: 2rem;
+    margin: 1rem 0 2rem;
+    text-align: center;
+    font-size: 1.4rem;
+}
+.team-card__wins svg {
+    width: 1.6rem;
+    height: 1.6rem;
+    margin-bottom: -5px;
+    fill: #e2d612;
+}
+.team-card__wins {
+    /* background: hsla(0, 0%, 7%, 0.35); */
+    border-radius: 1000px;
+    text-align: left;
+    font-size: 1.2rem;
+    /* padding: 1rem; */
+    display: inline-block;
+    color: #fff;
+    font-weight: 700;
+    position: relative;
+}
+.team-card__wins::after {
+    content: "";
+}
+.card__details {
+    text-align: center;
+}
+.team-card__wins.hide__wins {
+    display: none;
+}
+.teams {
+    margin: 0 -10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
