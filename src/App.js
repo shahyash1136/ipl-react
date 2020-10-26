@@ -11,7 +11,7 @@ class App extends Component {
         <div>
           <Switch>
             <Route path='/' exact component={Teams} />
-            <Route path='/players?:id' component={Players} />
+            <Route path='/players' component={Players} />
           </Switch>
         </div>
       </Router>

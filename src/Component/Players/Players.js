@@ -3,8 +3,8 @@ import Player from './Player';
 import './Players.css';
 
 class Players extends Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
             All: [
                 {
@@ -1980,10 +1980,10 @@ class Players extends Component {
                     let name = player.fullName;
                     let firstName = name.split(' ')[0];
                     let lastName = name.substr(name.indexOf(' ') + 1);
-
                     return <Player key={player.id} name={player.fullName} playerId={player.id} firstName={firstName} lastName={lastName} primaryColor={el.primaryColor} secondaryColor={el.secondaryColor} />
                 })
             }
+
         })
         return (
             <div className="container">

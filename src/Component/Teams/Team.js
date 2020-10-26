@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Team = ({ teamId, teamName, homeGround, wins, primaryColor, isChampion, secondaryColor }) => {
     return (
         <div className="card team-card">
-            <Link className="team-card__inner" to={`/players?id=${teamId}`} data-teamid={teamId} style={{ background: `linear-gradient(134deg,#${primaryColor},#${secondaryColor})` }}>
+            <Link className="team-card__inner" to={{ pathname: '/players', search: `?id=${teamId}` }} data-teamid={teamId} style={{ background: `linear-gradient(134deg,#${primaryColor},#${secondaryColor})` }}>
                 <div className="card__info">
                     <div className="team-card__logo">
                         <img src={`/assets/images/teams/${teamId}.png`} alt={teamName} />
